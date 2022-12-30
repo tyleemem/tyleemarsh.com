@@ -10,7 +10,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <h1>Tylee Marsh</h1>
+        <div className="text-center">
+          <h1 className="text-3xl font-semibold">Tylee Marsh</h1>
+        </div>
       </main>
     </>
   );
