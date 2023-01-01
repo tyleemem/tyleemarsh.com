@@ -23,7 +23,7 @@ export default function About() {
         </div>
         <Image
           className="mt-6 rounded-lg"
-          src="/placeholder.jpeg"
+          src="/images/tylee.png"
           alt="Profile of Tylee"
           width={500}
           height={500}
