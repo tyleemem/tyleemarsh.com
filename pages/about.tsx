@@ -5,7 +5,7 @@ export default function About() {
     <div className="mx-auto max-w-7xl p-4 sm:p-6 lg:p-8">
       <main>
         <div className="space-y-4 p-6">
-          <h1 className="text-3xl font-rounded">Hi - I&apos;m Tylee</h1>
+          <h1 className="text-2xl   font-rounded">Hi - I&apos;m Tylee</h1>
           <h2 className="italic">She / Her / They</h2>
           <p>
             I&apos;m a designer living in Brooklyn. Currently working at a small
