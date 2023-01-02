@@ -1,5 +1,7 @@
 const { fontFamily } = require("tailwindcss/defaultTheme");
+
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
@@ -8,7 +10,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["var(--pp-object-sans)", ...fontFamily.sans],
+        sans: ["PP Object Sans", ...fontFamily.sans],
+        rounded: ["PP Pangram Sans Rounded"]
       },
       colors: {
         cream: "#FFFFFA",
