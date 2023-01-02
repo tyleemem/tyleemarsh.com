@@ -1,4 +1,4 @@
-const { fontFamily } = require('tailwindcss/defaultTheme')
+const { fontFamily } = require("tailwindcss/defaultTheme");
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['var(--pp-object-sans)', ...fontFamily.sans],
+        sans: ["var(--pp-object-sans)", ...fontFamily.sans],
       },
       colors: {
         cream: "#FFFFFA",

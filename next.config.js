@@ -4,11 +4,11 @@ const nextConfig = {
   async redirects() {
     return [
       {
-        source: '/',
-        destination: '/about',
+        source: "/",
+        destination: "/about",
         permanent: false,
       },
-    ]
+    ];
   },
 };
 
