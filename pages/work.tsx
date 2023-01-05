@@ -5,6 +5,7 @@ export default function Work() {
         <Project name="Profile" />
         <Project name="Dropmark" />
         <Project name="Possible" />
+        <Project name="Every" />
         <Project name="Shared Future" />
         <Project name="Creative Mornings" />
       </div>
