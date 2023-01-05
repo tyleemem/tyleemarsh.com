@@ -3,7 +3,7 @@ import { ReactNode } from "react";
 export default function Work() {
   return (
     <main className="mx-auto max-w-screen-xl">
-      <div className="grid grid-cols-1 justify-items-center gap-8 p-8 md:grid-cols-3">
+      <div className="grid grid-cols-1 justify-items-stretch gap-8 p-8 md:grid-cols-3">
         <Project name="Profile" shape={<Circle />} />
         <Project name="Dropmark" shape={<Door />} />
         <Project name="Possible" shape={<Square />} />
@@ -17,7 +17,7 @@ export default function Work() {
 
 function Project({ name, shape }: { name: string; shape: ReactNode }) {
   return (
-    <div className="grid h-80 w-80 grid-cols-1 items-center xl:h-96 xl:w-96">
+    <div className="grid grid-cols-1 items-center">
       <div className="z-10 col-span-full row-span-full text-center font-rounded text-2xl">
         {name}
       </div>
