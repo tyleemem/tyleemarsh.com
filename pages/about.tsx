@@ -3,7 +3,7 @@ import { ReactNode } from "react";
 
 export default function About() {
   return (
-    <div className="mx-auto max-w-screen-xl">
+    <div className="mx-auto max-w-screen-2xl">
       <main>
         <Layout>
           <Column>

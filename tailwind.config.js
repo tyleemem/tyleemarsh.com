@@ -11,18 +11,18 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ["PP Object Sans", ...fontFamily.sans],
-        rounded: ["PP Pangram Sans Rounded"]
+        rounded: ["PP Pangram Sans Rounded"],
       },
       fontSize: {
-        'caption': '0.425rem',
-        'xs': '0.5625rem',
-        'sm': '0.75rem',
-        'base': '1rem',
-        'lg': '1.33125rem',
-        'xl': '1.775rem',
-        '2xl': '2.36875rem',
-        '3xl': '3.15625rem',
-        '4xl': '4.20625rem',
+        caption: "0.425rem",
+        xs: "0.5625rem",
+        sm: "0.75rem",
+        base: "1rem",
+        lg: "1.33125rem",
+        xl: "1.775rem",
+        "2xl": "2.36875rem",
+        "3xl": "3.15625rem",
+        "4xl": "4.20625rem",
       },
       colors: {
         cream: "#FFFFFA",
@@ -40,6 +40,9 @@ module.exports = {
         lime: "#90D644",
         algae: "#5AC7B1",
         cobalt: "#3522EC",
+      },
+      screens: {
+        "2xl": "1440px",
       },
     },
   },

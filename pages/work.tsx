@@ -2,8 +2,8 @@ import { ReactNode } from "react";
 
 export default function Work() {
   return (
-    <main className="mx-auto max-w-screen-xl">
-      <div className="grid grid-cols-1 justify-items-stretch gap-8 p-8 md:grid-cols-3">
+    <main className="mx-auto max-w-screen-2xl">
+      <div className="grid grid-cols-1 justify-items-stretch gap-11 p-11 md:grid-cols-3">
         <Project name="Profile" shape={<Circle />} />
         <Project name="Dropmark" shape={<Door />} />
         <Project name="Possible" shape={<Square />} />
