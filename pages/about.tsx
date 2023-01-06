@@ -3,22 +3,20 @@ import { ReactNode } from "react";
 
 export default function About() {
   return (
-    <div className="mx-auto max-w-screen-2xl">
-      <main>
-        <Layout>
-          <Column>
-            <Copy>
-              <Heading>{"Hi - I'm Tylee"}</Heading>
-              <Pronouns />
-              <Biography />
-            </Copy>
-          </Column>
-          <Column>
-            <ProfileImage />
-          </Column>
-        </Layout>
-      </main>
-    </div>
+    <main>
+      <Layout>
+        <Column>
+          <Copy>
+            <Heading>{"Hi - I'm Tylee"}</Heading>
+            <Pronouns />
+            <Biography />
+          </Copy>
+        </Column>
+        <Column>
+          <ProfileImage />
+        </Column>
+      </Layout>
+    </main>
   );
 }
 
