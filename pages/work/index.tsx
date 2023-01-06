@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { ReactNode } from "react";
 
 export default function Work() {
@@ -5,7 +6,7 @@ export default function Work() {
     <main>
       <div className="grid grid-cols-1 justify-items-stretch gap-11 p-11 md:grid-cols-3">
         <Tile name="Profile" shape={<Circle />} />
-        <Tile name="Dropmark" shape={<Door />} />
+        <Link href="work/dropmark"><Tile name="Dropmark" shape={<Door />} /></Link>
         <Tile name="Possible" shape={<Square />} />
         <Tile name="Every" shape={<Square />} />
         <Tile name="Shared Future" shape={<Circle />} />
@@ -17,12 +18,12 @@ export default function Work() {
 
 function Tile({ name, shape }: { name: string; shape: ReactNode }) {
   return (
-    <div className="grid grid-cols-1 items-center">
-      <div className="z-10 col-span-full row-span-full text-center font-rounded text-2xl">
-        {name}
+      <div className="grid grid-cols-1 items-center">
+        <div className="z-10 col-span-full row-span-full text-center font-rounded text-2xl">
+          {name}
+        </div>
+        <div className="z-0 col-span-full row-span-full">{shape}</div>
       </div>
-      <div className="z-0 col-span-full row-span-full">{shape}</div>
-    </div>
   );
 }
 
