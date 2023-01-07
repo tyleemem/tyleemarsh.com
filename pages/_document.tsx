@@ -4,7 +4,7 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head />
-      <body className="mx-auto max-w-screen-2xl bg-cream font-sans">
+      <body >
         <Main />
         <NextScript />
       </body>
