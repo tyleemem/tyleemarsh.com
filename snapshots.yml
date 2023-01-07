@@ -7,7 +7,7 @@ snapshots:
     url: "/work"
 
   - name: "dropmark"
-    url: "/dropmark"
+    url: "/work/dropmark"
 
   - name: "creative mornings"
     url: "/work/creative-mornings"
