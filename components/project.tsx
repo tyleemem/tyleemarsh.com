@@ -1,10 +1,17 @@
 import { ReactNode } from "react";
 import { Copy } from "components/copy";
+import * as color from "components/color";
 
-export function Layout({ children }: { children: ReactNode }) {
+export function Layout({
+  color,
+  children,
+}: {
+  color: color.Color;
+  children: ReactNode;
+}) {
   return (
     <div className="md:p-11">
-      <Background>
+      <Background color={color}>
         <div className="grid grid-cols-1 justify-items-center gap-4 md:p-14 lg:grid-cols-12 lg:justify-items-end">
           {children}
         </div>
@@ -13,8 +20,14 @@ export function Layout({ children }: { children: ReactNode }) {
   );
 }
 
-function Background({ children }: { children: ReactNode }) {
-  return <div className="rounded-lg bg-lemonLime">{children}</div>;
+function Background({
+  color,
+  children,
+}: {
+  color: color.Color;
+  children: ReactNode;
+}) {
+  return <div className={`rounded-lg ${color.background}`}>{children}</div>;
 }
 
 export function TopLeft({ children }: { children: ReactNode }) {

@@ -3,18 +3,26 @@ import { ReactNode } from "react";
 
 export default function Work() {
   return (
-    <main>
-      <div className="grid grid-cols-1 justify-items-stretch gap-11 p-11 md:grid-cols-3">
+    <div className="grid grid-cols-1 justify-items-stretch gap-11 p-11 md:grid-cols-3">
+      <Link href="about">
         <Tile name="Profile" shape={<Circle />} />
-        <Link href="work/dropmark">
-          <Tile name="Dropmark" shape={<Door />} />
-        </Link>
+      </Link>
+      <Link href="work/dropmark">
+        <Tile name="Dropmark" shape={<Door />} />
+      </Link>
+      <Link href="work/possible">
         <Tile name="Possible" shape={<Square />} />
+      </Link>
+      <Link href="work/every">
         <Tile name="Every" shape={<Square />} />
+      </Link>
+      <Link href="work/shared-future">
         <Tile name="Shared Future" shape={<Circle />} />
+      </Link>
+      <Link href="work/creative-mornings">
         <Tile name="Creative Mornings" shape={<C />} />
-      </div>
-    </main>
+      </Link>
+    </div>
   );
 }
 

@@ -4,7 +4,6 @@ import { ReactNode } from "react";
 
 export default function About() {
   return (
-    <main>
       <Layout>
         <Column>
           <Copy>
@@ -17,7 +16,6 @@ export default function About() {
           <ProfileImage />
         </Column>
       </Layout>
-    </main>
   );
 }
 

@@ -1,18 +1,15 @@
 import Image from "next/image";
 import { List } from "components/copy";
 import * as project from "components/project";
+import * as color from "components/color";
 
 export default function Page() {
-  return (
-    <main>
-      <Dropmark />
-    </main>
-  );
+  return <Dropmark />;
 }
 
 export function Dropmark() {
   return (
-    <project.Layout>
+    <project.Layout color={color.LemonLime}>
       <project.TopLeft>
         <project.Description type="Product Design" title="Dropmark">
           <p className="italic">Product & Design Goals:</p>
