@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.list-emdash > li:before {
+  content: "— ";
+}
+
 @font-face {
   font-family: "PP Object Sans";
   src: url("/fonts/PPObjectSans-Regular.woff2");

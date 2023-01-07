@@ -20,7 +20,7 @@ export default function Dropmark() {
               UX goals:
             </p>
 
-            <ul className="list-inside list-disc">
+            <ul className="list-emdash list-inside space-y-4">
               <li>Significantly improve UX and streamline the funnel</li>
 
               <li>
