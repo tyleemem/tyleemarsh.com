@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { Copy } from "components/copy";
 import { ReactNode } from "react";
 
 export default function About() {
@@ -34,10 +35,6 @@ function Layout({ children }: { children: ReactNode }) {
 
 function Column({ children }: { children: ReactNode }) {
   return <div className="mx-auto max-w-lg">{children}</div>;
-}
-
-function Copy({ children }: { children: ReactNode }) {
-  return <div className="space-y-4">{children}</div>;
 }
 
 function ProfileImage() {
