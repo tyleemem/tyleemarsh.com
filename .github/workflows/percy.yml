@@ -1,0 +1,15 @@
+name: Percy
+on:
+  deployment_status:
+
+jobs:
+  test:
+    if: github.event_name == 'deployment_status' && github.event.deployment_status.state == 'success'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Percy Test
+        env:
+          PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
+        run: npx @percy/cli snapshot -b ${{ github.event.deployment_status.target_url}} snapshots.yml

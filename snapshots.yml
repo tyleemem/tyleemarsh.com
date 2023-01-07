@@ -1,0 +1,22 @@
+base-url: http://localhost:3000
+snapshots:
+  - name: "about"
+    url: "/about"
+
+  - name: "work"
+    url: "/work"
+
+  - name: "dropmark"
+    url: "/dropmark"
+
+  - name: "creative mornings"
+    url: "/work/creative-mornings"
+
+  - name: "every"
+    url: "/work/every"
+
+  - name: "possible"
+    url: "/work/possible"
+
+  - name: "shared future"
+    url: "/work/shared-future"
