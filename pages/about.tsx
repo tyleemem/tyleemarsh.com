@@ -4,18 +4,18 @@ import { ReactNode } from "react";
 
 export default function About() {
   return (
-      <Layout>
-        <Column>
-          <Copy>
-            <Heading>{"Hi - I'm Tylee"}</Heading>
-            <Pronouns />
-            <Biography />
-          </Copy>
-        </Column>
-        <Column>
-          <ProfileImage />
-        </Column>
-      </Layout>
+    <Layout>
+      <Column>
+        <Copy>
+          <Heading>{"Hi - I'm Tylee"}</Heading>
+          <Pronouns />
+          <Biography />
+        </Copy>
+      </Column>
+      <Column>
+        <ProfileImage />
+      </Column>
+    </Layout>
   );
 }
 
