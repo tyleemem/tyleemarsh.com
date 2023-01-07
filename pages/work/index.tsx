@@ -1,12 +1,13 @@
 import Link from "next/link";
 import { ReactNode } from "react";
 import * as color from "components/color";
+import * as profile from "components/profile";
 
 export default function Work() {
   return (
     <div className="grid grid-cols-1 justify-items-stretch gap-11 p-11 md:grid-cols-3">
       <Link href="about">
-        <Tile name="Profile" shape={<Circle color={color.WarmGray} />} />
+        <profile.Avatar />
       </Link>
       <Link href="work/dropmark">
         <Tile name="Dropmark" shape={<Door color={color.LemonLime} />} />

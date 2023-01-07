@@ -1,5 +1,5 @@
-import Image from "next/image";
 import { Copy } from "components/copy";
+import * as profile from "components/profile";
 import { ReactNode } from "react";
 
 export default function About() {
@@ -13,7 +13,7 @@ export default function About() {
         </Copy>
       </Column>
       <Column>
-        <ProfileImage />
+        <profile.Portrait />
       </Column>
     </Layout>
   );
@@ -33,18 +33,6 @@ function Layout({ children }: { children: ReactNode }) {
 
 function Column({ children }: { children: ReactNode }) {
   return <div className="mx-auto max-w-lg">{children}</div>;
-}
-
-function ProfileImage() {
-  return (
-    <Image
-      className="rounded-lg"
-      src="/images/tylee.png"
-      alt="Profile of Tylee"
-      width={500}
-      height={500}
-    />
-  );
 }
 
 function Pronouns() {
