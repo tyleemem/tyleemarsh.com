@@ -1,24 +1,23 @@
 import Image from "next/image";
+import { Copy } from "components/copy";
 import { ReactNode } from "react";
 
 export default function About() {
   return (
-    <div className="mx-auto max-w-screen-2xl">
-      <main>
-        <Layout>
-          <Column>
-            <Copy>
-              <Heading>{"Hi - I'm Tylee"}</Heading>
-              <Pronouns />
-              <Biography />
-            </Copy>
-          </Column>
-          <Column>
-            <ProfileImage />
-          </Column>
-        </Layout>
-      </main>
-    </div>
+    <main>
+      <Layout>
+        <Column>
+          <Copy>
+            <Heading>{"Hi - I'm Tylee"}</Heading>
+            <Pronouns />
+            <Biography />
+          </Copy>
+        </Column>
+        <Column>
+          <ProfileImage />
+        </Column>
+      </Layout>
+    </main>
   );
 }
 
@@ -36,10 +35,6 @@ function Layout({ children }: { children: ReactNode }) {
 
 function Column({ children }: { children: ReactNode }) {
   return <div className="mx-auto max-w-lg">{children}</div>;
-}
-
-function Copy({ children }: { children: ReactNode }) {
-  return <div className="space-y-4">{children}</div>;
 }
 
 function ProfileImage() {
