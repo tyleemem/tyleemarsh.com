@@ -5,7 +5,7 @@ import * as profile from "components/profile";
 
 export default function Work() {
   return (
-    <div className="grid grid-cols-1 justify-items-stretch gap-11 p-11 md:grid-cols-3">
+    <div className="grid grid-cols-1 justify-items-stretch gap-11 md:grid-cols-3">
       <Link href="about">
         <profile.Avatar />
       </Link>

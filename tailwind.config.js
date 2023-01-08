@@ -25,6 +25,7 @@ module.exports = {
         "4xl": "4.20625rem",
       },
       colors: {
+        "cream-transparent": "rgb(255, 255, 250, 0.75)",
         cream: "#FFFFFA",
         tomato: "#FF5D43",
         lake: "#00AFFA",
