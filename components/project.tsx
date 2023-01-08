@@ -10,13 +10,11 @@ export function Layout({
   children: ReactNode;
 }) {
   return (
-    <div className="md:p-11">
-      <Background color={color}>
-        <div className="grid grid-cols-1 justify-items-center gap-4 md:p-14 lg:grid-cols-12 lg:justify-items-end">
-          {children}
-        </div>
-      </Background>
-    </div>
+    <Background color={color}>
+      <div className="grid grid-cols-1 justify-items-center gap-4 md:p-14 lg:grid-cols-12 lg:justify-items-end">
+        {children}
+      </div>
+    </Background>
   );
 }
 
@@ -27,7 +25,7 @@ function Background({
   color: color.Color;
   children: ReactNode;
 }) {
-  return <div className={`rounded-lg ${color.background}`}>{children}</div>;
+  return <div className={`md:rounded-lg ${color.background}`}>{children}</div>;
 }
 
 export function TopLeft({ children }: { children: ReactNode }) {
