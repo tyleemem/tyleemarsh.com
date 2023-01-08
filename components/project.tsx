@@ -10,11 +10,11 @@ export function Layout({
   children: ReactNode;
 }) {
   return (
-      <Background color={color}>
-        <div className="grid grid-cols-1 justify-items-center gap-4 md:p-14 lg:grid-cols-12 lg:justify-items-end">
-          {children}
-        </div>
-      </Background>
+    <Background color={color}>
+      <div className="grid grid-cols-1 justify-items-center gap-4 md:p-14 lg:grid-cols-12 lg:justify-items-end">
+        {children}
+      </div>
+    </Background>
   );
 }
 
