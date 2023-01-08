@@ -6,6 +6,7 @@ export function Avatar() {
       style={{
         clipPath: "circle()",
       }}
+      priority={true}
       src="/images/me-avatar.png"
       alt="Tylee in the garden"
       width={640}
@@ -17,6 +18,7 @@ export function Portrait() {
   return (
     <Image
       className="rounded-lg"
+      priority={true}
       src="/images/me-portrait.png"
       alt="Tylee in the garden"
       width={640}
