@@ -1,5 +1,6 @@
 import Link from "next/link";
 
+import { FeatureFlag } from "components/featureflag";
 import { useRouter } from "next/router";
 
 export function Navbar() {
@@ -24,15 +25,21 @@ export function Navbar() {
         >
           <span className="font-rounded">About</span>
         </Link>
-        <Link
-          className={`${whenActive(
-            "/work",
-            "text-algae"
-          )} duration-300 hover:text-algae hover:ease-in-out`}
-          href="/work"
-        >
-          <span className="font-rounded">Work</span>
-        </Link>
+        <FeatureFlag
+          name="show-work-nav"
+          feature={
+            <Link
+              className={`${whenActive(
+                "/work",
+                "text-algae"
+              )} duration-300 hover:text-algae hover:ease-in-out`}
+              href="/work"
+            >
+              <span className="font-rounded">Work</span>
+            </Link>
+          }
+          default={<></>}
+        />
       </nav>
     </div>
   );

@@ -2,20 +2,7 @@ import Link from "next/link";
 import { ReactNode } from "react";
 import * as color from "components/color";
 import * as profile from "components/profile";
-import { useRouter } from "next/router";
-
-function FeatureFlag(params: {
-  name: string;
-  feature: JSX.Element;
-  default: JSX.Element;
-}): JSX.Element {
-  const { query } = useRouter();
-
-  if (query["feature-flag"] === params.name) {
-    return params.feature;
-  }
-  return params.default;
-}
+import { FeatureFlag } from "components/featureflag";
 
 export default function Work() {
   return (
